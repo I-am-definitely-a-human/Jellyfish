@@ -1,0 +1,39 @@
+@mixin back_text($back, $text-color, $size, $weight, $font) {
+    background-color: $back;
+    color: $text-color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $font;
+}
+
+@mixin border($width, $style, $color, $radius) {
+    border: $width $style $color;
+    border-radius: $radius;
+}
+
+@mixin mp($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+
+@mixin hover_scale($init: 1, $end) {
+    transform: scale($init);
+
+    &:hover {
+        transform: scale($end);
+    }
+}
+
+@mixin flex {
+    display: flex;
+    align-items :center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-newline {
+    flex-basis: 100%;
+    height: 0;
+
+    @include mp(0, 0);
+}

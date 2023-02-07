@@ -1,0 +1,66 @@
+$link-box-padding: 1vw;
+
+$link-gap: 5%;
+
+@import "universal.scss";
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link-box-container {
+    @include flex;
+    width: 80vw;
+    column-gap: $link-gap;
+}
+
+.mainpage-header {
+    font-size: 5em;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5vh 0;
+}
+
+#scramble-word {
+    @include flex;
+    @include back_text(darkblue, aqua, 1.1em, bold, Arial);
+    @include border(4px, solid, black, 8px);
+    @include mp(0, $link-box-padding);
+
+    @include hover_scale($end: 1.15);
+
+    transition: all 0.5s;
+
+    flex: 1 1 0px;
+
+    &:hover {
+        padding: $link-box-padding * 1.5;
+        margin: -($link-box-padding * 1.5 - $link-box-padding);
+        background-color: blue;
+
+        cursor: pointer;
+    }
+}
+
+#calculator {
+    @include flex;
+    @include back_text(darkgreen, chartreuse, 1.1em, bold, Arial);
+    @include border(4px, solid, rgb(0, 0, 50), 8px);
+    @include mp(0, $link-box-padding);
+
+    @include hover_scale($end: 1.15);
+
+    transition: all 0.5s;
+
+    flex: 1 1 0px;
+
+    &:hover {
+        padding: $link-box-padding * 1.5;
+        margin: -($link-box-padding * 1.5 - $link-box-padding);
+        background-color: green;
+
+        cursor: pointer;
+    }
+}

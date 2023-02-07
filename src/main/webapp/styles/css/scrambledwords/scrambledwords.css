@@ -1,0 +1,73 @@
+.flex-newline {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.word-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+#word-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 4px solid black;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+#word-guesser {
+  font-size: 1.5em;
+}
+
+#guess-enter {
+  margin: 0 0 0.8em 0;
+  padding: 0.2em;
+  font-size: 2em;
+}
+
+#original-word {
+  display: none !important;
+}
+
+#submit {
+  background-color: darkblue;
+  color: white;
+  font-size: 2em;
+  font-weight: normal;
+  font-family: Arial;
+  margin: 0.7em 0 1.5em 0;
+  padding: 0.4em;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 0 0.7em grey;
+  transform: none;
+  transition: all 0.3s;
+}
+#submit:hover {
+  cursor: pointer;
+}
+#submit:active {
+  cursor: pointer;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0.3em rgb(100, 100, 100);
+}
+
+/*# sourceMappingURL=scrambledwords.css.map */

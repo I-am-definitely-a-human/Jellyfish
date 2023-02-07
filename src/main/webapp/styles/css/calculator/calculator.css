@@ -1,0 +1,104 @@
+.flex-newline {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+#calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 4px solid black;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+  padding: 3em;
+  flex-basis: 50%;
+}
+
+#calc-select-operation-header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#operation-select {
+  margin: 0;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(206, 255, 239);
+  color: black;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: Arial;
+}
+
+.op-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 3px solid black;
+  border-radius: 6px;
+  background-color: beige;
+}
+.op-container .op-type {
+  display: none !important;
+}
+.op-container .op-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.op-container .op-form input[type=text], .op-container .op-form p {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.4em;
+}
+.op-container .submit {
+  background-color: darkblue;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: Arial;
+  margin: 0.7em 0 0.6em 0;
+  padding: 0.3em;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0.6em grey;
+  transform: none;
+  transition: all 0.3s;
+}
+.op-container .submit:hover {
+  cursor: pointer;
+}
+.op-container .submit:active {
+  cursor: pointer;
+  transform: translate(0, 0.3em);
+  box-shadow: 0 0.3em rgb(100, 100, 100);
+}
+
+/*# sourceMappingURL=calculator.css.map */

@@ -1,0 +1,40 @@
+.flex-newline {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#outer-result-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+#result-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 4px solid black;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+  padding: 3em;
+}
+#result-box p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=results.css.map */

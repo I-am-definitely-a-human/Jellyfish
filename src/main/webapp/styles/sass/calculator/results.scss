@@ -1,0 +1,22 @@
+@import "../universal.scss";
+
+html, body {
+    @include mp(0,  0);
+}
+
+#outer-result-shell {
+    @include flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#result-box {
+    @include flex;
+    @include border(4px, solid, black, 8px);
+    @include back_text(antiquewhite, black, 1.1em, bold, Arial);
+    padding: 3em;
+
+    p {
+        text-align: center;
+    }
+}

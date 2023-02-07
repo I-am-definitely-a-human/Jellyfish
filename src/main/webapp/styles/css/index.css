@@ -1,0 +1,86 @@
+.flex-newline {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  column-gap: 5%;
+}
+
+.mainpage-header {
+  font-size: 5em;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 5vh 0;
+}
+
+#scramble-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: darkblue;
+  color: aqua;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+  border: 4px solid black;
+  border-radius: 8px;
+  margin: 0;
+  padding: 1vw;
+  transform: scale(1);
+  transition: all 0.5s;
+  flex: 1 1 0px;
+}
+#scramble-word:hover {
+  transform: scale(1.15);
+}
+#scramble-word:hover {
+  padding: 1.5vw;
+  margin: -0.5vw;
+  background-color: blue;
+  cursor: pointer;
+}
+
+#calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: darkgreen;
+  color: chartreuse;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+  border: 4px solid rgb(0, 0, 50);
+  border-radius: 8px;
+  margin: 0;
+  padding: 1vw;
+  transform: scale(1);
+  transition: all 0.5s;
+  flex: 1 1 0px;
+}
+#calculator:hover {
+  transform: scale(1.15);
+}
+#calculator:hover {
+  padding: 1.5vw;
+  margin: -0.5vw;
+  background-color: green;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
